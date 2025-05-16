@@ -1,4 +1,4 @@
-name: focal-board
+name: autoscaling
 
 on:
   workflow_dispatch:
