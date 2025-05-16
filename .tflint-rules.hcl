@@ -2,7 +2,7 @@ plugin "aws" {
   enabled = true
   version = "0.29.0"
   source  = "github.com/terraform-linters/tflint-ruleset-aws"
-  region  = "us-east-1"
+  region  = "us-east-2"
 }
 
 # Format of output (valid values: default, compact, json)
