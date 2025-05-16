@@ -1,14 +1,13 @@
-provider "aws" {
-  region = "ap-south-1"
-}
-
 terraform {
-  backend "s3" {
-    bucket         = "terraform-state-backend-vamsee"
-    key            = "terraform/autoscaling/statefile"
-    region         = "us-west-1"
-    encrypt        = true
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 3.0.0"
+    }
   }
+}
+provider "aws" {
+  region = "us-east-1"
 }
 
 module "vpc" {
